@@ -1,6 +1,5 @@
 #ifndef COMPLEX_NUMBER_H
 #define COMPLEX_NUMBER_H
-
 class ComplexNumber {
 public:
   ComplexNumber();
@@ -26,4 +25,10 @@ private:
   float a;
   float b;
 };
+
+std::ostream& operator<<(std::ostream& os, const ComplexNumber& cn)
+{
+  os << cn.getA() << " + " << cn.getB() << "i";
+  return os;
+}
 #endif
