@@ -11,14 +11,20 @@ public:
   ComplexNumber operator-(const ComplexNumber& otherNumber);
   ComplexNumber operator*(const ComplexNumber& otherNumber);
   ComplexNumber operator/(const ComplexNumber& otherNumber);
+  double getA() const {
+    return a;
+  }
+  double getB() const {
+    return b;
+  }
 private:
   float a;
   float b;
 };
 
-std::ostream& operator<<(ostream& os, const Date& dt)
+std::ostream& operator<<(std::ostream& os, const ComplexNumber& cn)
 {
-    os << dt.mo << '/' << dt.da << '/' << dt.yr;
+    os << cn.getA() << " + " << cn.getB() << "i";
     return os;
 }
 #endif

@@ -1,6 +1,4 @@
-#include "complex_number.cc"
 #include <iostream>
-
 using namespace std;
 
 int main(int argc, char *argv[]) {
