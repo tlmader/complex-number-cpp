@@ -1,4 +1,5 @@
 #include <iostream>
+#include "complex_number.hpp"
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -6,8 +7,10 @@ int main(int argc, char *argv[]) {
 }
 
 void testAdd() {
-
-  cout << "SUCCESS" << endl;
+  ComplexNumber cn1(1, 2);
+  ComplexNumber cn2(3, 4);
+  cn1 = cn1 + cn2;
+  cout << &cn1 << endl;
 }
 
 void testSubtract() {
