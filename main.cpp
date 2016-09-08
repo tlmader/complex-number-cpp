@@ -19,6 +19,15 @@ void testAdd() {
   } else {
     printFailure();
   }
+  ComplexNumber cn3(4, 8);
+  ComplexNumber cn4(2, 4);
+  cn = cn3 + cn4;
+  std::cout << cn << std::endl;
+  if (cn.getA() == 6 && cn.getB() == 12) {
+    printSuccess();
+  } else {
+    printFailure();
+  }
 }
 
 void testSubtract() {
@@ -31,6 +40,15 @@ void testSubtract() {
   } else {
     printFailure();
   }
+  ComplexNumber cn3(4, 8);
+  ComplexNumber cn4(2, 4);
+  cn = cn3 - cn4;
+  std::cout << cn << std::endl;
+  if (cn.getA() == 2 && cn.getB() == 4) {
+    printSuccess();
+  } else {
+    printFailure();
+  }
 }
 
 void testMultiply() {
@@ -39,6 +57,15 @@ void testMultiply() {
   ComplexNumber cn = cn1 * cn2;
   std::cout << cn << std::endl;
   if (cn.getA() == 0 && cn.getB() == 2) {
+    printSuccess();
+  } else {
+    printFailure();
+  }
+  ComplexNumber cn3(2, 2);
+  ComplexNumber cn4(4, 2);
+  cn = cn3 * cn4;
+  std::cout << cn << std::endl;
+  if (cn.getA() == 4 && cn.getB() == 12) {
     printSuccess();
   } else {
     printFailure();
