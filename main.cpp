@@ -1,14 +1,28 @@
 #include "complex_number.hpp"
 #include <iostream>
 
+/**
+ * Contains tests for overloaded operator functions in ComplexNumber.
+ */
+
+/**
+ * Prints success message.
+ */
 void printSuccess() {
   std::cout << "SUCCESS" << std::endl;
 }
 
+/**
+ * Prints failure message.
+ */
 void printFailure() {
   std::cout << "FAILURE" << std::endl;
 }
 
+/**
+ * Tests overloaded add operator function using ComplexNumber entities with
+ * different values.
+ */
 void testAdd() {
   ComplexNumber cn1(1, 1);
   ComplexNumber cn2(1, 1);
@@ -30,6 +44,10 @@ void testAdd() {
   }
 }
 
+/**
+ * Tests overloaded subtract operator function using ComplexNumber entities with
+ * different values.
+ */
 void testSubtract() {
   ComplexNumber cn1(1, 1);
   ComplexNumber cn2(1, 1);
@@ -51,6 +69,10 @@ void testSubtract() {
   }
 }
 
+/**
+ * Tests overloaded multiply operator function using ComplexNumber entities with
+ * different values.
+ */
 void testMultiply() {
   ComplexNumber cn1(1, 1);
   ComplexNumber cn2(1, 1);
@@ -72,6 +94,10 @@ void testMultiply() {
   }
 }
 
+/**
+ * Tests overloaded divive operator function using ComplexNumber entities with
+ * different values.
+ */
 void testDivide() {
   ComplexNumber cn1(1, 1);
   ComplexNumber cn2(1, 1);
@@ -93,6 +119,12 @@ void testDivide() {
   }
 }
 
+/**
+ * Called at program startup
+ *
+ * @param argc number of arguments
+ * @param argv an array of arguments
+ */
 int main(int argc, char *argv[]) {
   testAdd();
   testSubtract();

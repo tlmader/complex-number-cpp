@@ -1,6 +1,10 @@
 #include "complex_number.hpp"
 #include <iostream>
 
+/**
+ * Implements functions for ComplexNumbers.
+ */
+
 ComplexNumber::ComplexNumber() {
   a = 0;
   b = 0;
