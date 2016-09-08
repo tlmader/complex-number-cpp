@@ -1,4 +1,5 @@
 #include "complex_number.hpp"
+#include <iostream>
 
 ComplexNumber::ComplexNumber() {
   a = 0;
@@ -42,4 +43,26 @@ ComplexNumber ComplexNumber::operator/(const ComplexNumber& other) {
   cn.a = ((this->a * other.getA()) + (this->b * other.getB())) / denominator;
   cn.b = ((this->b * other.getA()) - (this->a * other.getB())) / denominator;
   return cn;
+}
+
+double ComplexNumber::getA() const {
+  return a;
+}
+
+void ComplexNumber::setA(float _a) {
+  a = _a;
+}
+
+double ComplexNumber::getB() const {
+  return b;
+}
+
+void ComplexNumber::setB(float _b) {
+  b = _b;
+}
+
+std::ostream& operator<<(std::ostream& os, const ComplexNumber& cn)
+{
+  os << cn.getA() << " + " << cn.getB() << "i";
+  return os;
 }

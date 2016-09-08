@@ -1,5 +1,8 @@
-#ifndef COMPLEX_NUMBER_H
-#define COMPLEX_NUMBER_H
+#ifndef complex_number_h
+#define complex_number_h
+
+#include <iostream>
+
 class ComplexNumber {
 public:
   ComplexNumber();
@@ -9,26 +12,13 @@ public:
   ComplexNumber operator-(const ComplexNumber& other);
   ComplexNumber operator*(const ComplexNumber& other);
   ComplexNumber operator/(const ComplexNumber& other);
-  double getA() const {
-    return a;
-  }
-  void setA(float _a) {
-    a = _a;
-  }
-  double getB() const {
-    return b;
-  }
-  void setB(float _b) {
-    b = _b;
-  }
+  double getA() const;
+  void setA(float _a);
+  double getB() const;
+  void setB(float _b);
+  friend std::ostream& operator<<(std::ostream& os, ComplexNumber const& cn);
 private:
   float a;
   float b;
 };
-
-std::ostream& operator<<(std::ostream& os, const ComplexNumber& cn)
-{
-  os << cn.getA() << " + " << cn.getB() << "i";
-  return os;
-}
 #endif
