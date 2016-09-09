@@ -122,7 +122,7 @@ void testDivide() {
 /**
  * Called at program startup
  *
- * @param argc number of arguments
+ * @param argc the number of arguments
  * @param argv an array of arguments
  */
 int main(int argc, char *argv[]) {
