@@ -95,7 +95,7 @@ void testMultiply() {
 }
 
 /**
- * Tests overloaded divive operator function using ComplexNumber entities with
+ * Tests overloaded divide operator function using ComplexNumber entities with
  * different values.
  */
 void testDivide() {
