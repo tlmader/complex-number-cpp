@@ -2,7 +2,10 @@
 #include <iostream>
 
 /**
- * Contains tests for overloaded operator functions in ComplexNumber.
+ * Contains the main function tests for overloaded operator functions in
+ * ComplexNumber.
+ * @author Ted Mader
+ * @date 2016-09-07
  */
 
 /**

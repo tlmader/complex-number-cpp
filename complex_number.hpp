@@ -5,6 +5,8 @@
 
 /**
  * Contains function declarations for ComplexNumbers.
+ * @author Ted Mader
+ * @date 2016-09-07
  */
 class ComplexNumber {
 public:

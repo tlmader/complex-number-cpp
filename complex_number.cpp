@@ -3,6 +3,8 @@
 
 /**
  * Implements functions for ComplexNumbers.
+ * @author Ted Mader
+ * @date 2016-09-07
  */
 
 ComplexNumber::ComplexNumber() {

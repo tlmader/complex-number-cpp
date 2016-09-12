@@ -1,4 +1,11 @@
-CC = clang
+#
+# Makefile for csci4631-hw2
+#
+# Author: Ted Mader
+# Date: 2016-09-07
+#
+
+CC = gcc
 TARGETS = main
 
 all: $(TARGETS)
