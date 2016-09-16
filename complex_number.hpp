@@ -1,13 +1,14 @@
-#ifndef complex_number_h
-#define complex_number_h
-
-#include <iostream>
-
 /**
  * Contains function declarations for ComplexNumbers.
  * @author Ted Mader
  * @date 2016-09-07
  */
+
+#ifndef complex_number_h
+#define complex_number_h
+
+#include <iostream>
+
 class ComplexNumber {
 public:
   /**

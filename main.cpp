@@ -1,12 +1,12 @@
-#include "complex_number.hpp"
-#include <iostream>
-
 /**
- * Contains the main function tests for overloaded operator functions in
+ * Contains the main function and tests for overloaded operator functions in
  * ComplexNumber.
  * @author Ted Mader
  * @date 2016-09-07
  */
+
+#include "complex_number.hpp"
+#include <iostream>
 
 /**
  * Prints success message.
