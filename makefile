@@ -5,7 +5,7 @@
 # Date: 2016-09-07
 #
 
-CC = gcc
+CC = clang
 TARGETS = main.exe
 
 all: $(TARGETS)
