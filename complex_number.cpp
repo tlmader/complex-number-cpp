@@ -1,11 +1,11 @@
-#include "complex_number.hpp"
-#include <iostream>
-
 /**
  * Implements functions for ComplexNumbers.
  * @author Ted Mader
  * @date 2016-09-07
  */
+ 
+#include "complex_number.hpp"
+#include <iostream>
 
 ComplexNumber::ComplexNumber() {
   a = 0;
